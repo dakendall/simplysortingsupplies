@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183053338234",
+    "project_id": "simply-sorting-supplies",
+    "storage_bucket": "simply-sorting-supplies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183053338234:android:0e4afa3629f5c01a585dc3",
+        "android_client_info": {
+          "package_name": "com.example.simplysortingsupplies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCysrHO991F0C6yXMvQf5anCno0v1MHcLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

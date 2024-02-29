@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Add Item"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addItemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/item"
+        app:layout_constraintEnd_toEndOf="@+id/addItem"
+        app:layout_constraintStart_toStartOf="@+id/addItem"
+        app:layout_constraintTop_toBottomOf="@+id/addItem" />
+
+    <Button
+        android:id="@+id/btnAddInventoryItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="Add Item"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/addItemAmount"
+        app:layout_constraintStart_toStartOf="@+id/addItemAmount"
+        app:layout_constraintTop_toBottomOf="@+id/addItemAmount" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:textColorHint="@color/colorWhite"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:hintTextColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Item Name"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorLink="@color/colorWhite" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/addItemAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Item Amount"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/addItemName"
+        app:layout_constraintStart_toStartOf="@+id/addItemName"
+        app:layout_constraintTop_toBottomOf="@+id/addItemName" />
+
+    <ProgressBar
+        android:id="@+id/addItemProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:progressDrawable="@drawable/progressbar_bg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddInventoryItem"
+        app:layout_constraintStart_toStartOf="@+id/btnAddInventoryItem"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddInventoryItem"
+        tools:progress="50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
